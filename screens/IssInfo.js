@@ -46,16 +46,16 @@ export default class IssLocationScreen extends Component {
                         justifyContent: "center",
                         alignItems: "center"
                     }}>
-                    <Text>Loading</Text>
+                    <Text>Cargando</Text>
                 </View>
             )
         } else {
             return (
                 <View style={styles.infoContainer}>
-                    <Text style={styles.infoText}>Latitude: {this.state.location.latitude}</Text>
-                    <Text style={styles.infoText}>Longitude: {this.state.location.longitude}</Text>
-                    <Text style={styles.infoText}>Altitude (KM): {this.state.location.altitude}</Text>
-                    <Text style={styles.infoText}>Velocity (KM/H): {this.state.location.velocity}</Text>
+                    <Text style={styles.infoText}>Latitud: {this.state.location.latitude}</Text>
+                    <Text style={styles.infoText}>Longitud: {this.state.location.longitude}</Text>
+                    <Text style={styles.infoText}>Altitud (KM): {this.state.location.altitude}</Text>
+                    <Text style={styles.infoText}>Velocidad (KM/H): {this.state.location.velocity}</Text>
                 </View>
             );
         }
